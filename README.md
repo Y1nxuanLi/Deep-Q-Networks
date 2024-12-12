@@ -28,6 +28,5 @@ An experimental version that removes the target network but still utilizes exper
 
 ### `DQN_punish`
 Introduces a custom punishment mechanism in the reward function to discourage losing life.
-
----
+ 
 ```bash 
