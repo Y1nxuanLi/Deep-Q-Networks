@@ -1,0 +1,16 @@
+Once downloaded, open Terminal and type:
+1.conda create --name DQL python=3.10
+2.conda activate DQL
+3.pip install matplotlib
+4.pip insatll gymnasium==1.0.0
+5.pip install gymnasium[other]
+6.pip install ale-py
+7.pip install stable-baselines3==2.4.0
+8.pip install tqdm
+
+Now finally the tricky part, installing torch
+1.Use nvidia-smi to check the maximum CUDA version supported by your NVIDIA driver.
+2.Use nvcc --version to check the CUDA toolkit version installed, if nvcc command not found or you want update CUDA toolkit version, go to NVIDIA Developer and find installer based on your OS system. (i.e. CUDA Toolkit 12.6 Update 3 Downloads) 
+https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local
+3.Finally, go to PyTorch and choose based on your system info: https://pytorch.org/get-started/locally/
+For example: Choose stable, windows, pip, python, CUDA 12.4, and copy paste command into terminal: pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
