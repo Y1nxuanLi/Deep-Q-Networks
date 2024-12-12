@@ -253,9 +253,9 @@ def evaluation(reward, visual=True, num_episode=10):
     plt.ylabel("Reward per Episode")
     if not os.path.exists('./Imgs'):
         os.makedirs('./Imgs')
-    plt.savefig(f'./Imgs/best_model_reward_on_breakout.png')
     plt.legend()
     plt.show()
+    plt.savefig(f'./Imgs/best_model_reward_on_breakout.png')
     plt.close()
 
     env_display.close()
